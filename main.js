@@ -11,6 +11,10 @@ const keyPlay = (event) => {
   event.target.style.backgroundColor = 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ')';
 };
 
+const keyReturn = (event) => {
+  event.target.style.backgroundColor = '';
+}
+
 // Write a named function with event handler properties
 
 
