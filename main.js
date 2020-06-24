@@ -16,10 +16,13 @@ const keyReturn = (event) => {
 }
 
 // Write a named function with event handler properties
-
+const noteManager = (note) => {
+  note.addEventListener('mousedown', keyPlay);
+  note.addEventListener('mouseup', keyReturn);
+}
 
 // Write a loop that runs the array elements through the function
-
+notes.forEach(function(note){noteManager(note);});
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
