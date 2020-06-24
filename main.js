@@ -6,7 +6,10 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-
+const keyPlay = (event) => {
+  let o = Math.round, r = Math.random(), s = 255;
+  event.target.style.backgroundColor = 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ')';
+};
 
 // Write a named function with event handler properties
 
