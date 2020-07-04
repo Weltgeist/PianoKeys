@@ -8,7 +8,7 @@ keys.forEach(function(key){
 // Write named functions that change the color of the keys below
 const keyPlay = (event) => {
   let o = Math.round, r = Math.random(), s = 255;
-  event.target.style.backgroundColor = 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ')';
+  event.target.style.backgroundColor = 'red';
 };
 
 const keyReturn = (event) => {
@@ -40,7 +40,7 @@ startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
 nextOne.click = function () {
-  
+
 };
 
 // Write anonymous event handler property and function for the second progress button
